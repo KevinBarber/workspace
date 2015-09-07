@@ -1,0 +1,17 @@
+package changeCalculator;
+
+import javax.swing.JOptionPane;
+
+public class TipCalculator {
+	public static void main(String[] args) {
+		String bill = JOptionPane
+				.showInputDialog("How much did your bill cost?");
+		String percentage = JOptionPane
+				.showInputDialog("How what percentage of a tip would you like to give");
+		int bill1 = Integer.parseInt(bill);
+		int percentage1 =Integer.parseInt(percentage);
+		int thing =	bill1/percentage1;
+		System.out.println("Your tip will be:" + thing);
+	
+	}
+}

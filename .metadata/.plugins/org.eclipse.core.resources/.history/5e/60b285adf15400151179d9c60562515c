@@ -13,16 +13,14 @@ public class ChangeCalculator
 
 		float priceReal = Float.parseFloat(price);
 		float paymentReal = Float.parseFloat(payment);
-		int priceRealInCents = (int)(priceReal *100);
-		int paymentRealInCents = (int)(paymentReal * 100);
-		int calculation = (int) (paymentRealInCents - priceRealInCents);
+		int calculation = (int) (paymentReal - priceReal);
 
 		dollars = calculation / 100;
 		calculation -= dollars * 100;
 		quarters = calculation / 25;
 		calculation -= quarters * 25;
 		dimes = calculation / 10;
-		calculation -= dimes * 10;
+		calculation = dimes * 10;
 		nickels = calculation / 5;
 		calculation -= nickels * 5;
 		pennies = calculation;
@@ -32,8 +30,8 @@ public class ChangeCalculator
 		}
 		if (paymentReal > priceReal) {
 
-			JOptionPane.showMessageDialog(null, "Your change left over: $" + dollars + " Quarters:" + quarters + "Dimes:" + dimes + "Nickels:" + nickels + "Pennies:" + pennies
-					);
+			JOptionPane.showMessageDialog(null, "Your change left over: $" +dollars + "Quarters:" + quarters + "Dimes:" + dimes + "Nickels:" + nickels + "Pennies:" + pennies
+					+ calculation);
 
 		}
 

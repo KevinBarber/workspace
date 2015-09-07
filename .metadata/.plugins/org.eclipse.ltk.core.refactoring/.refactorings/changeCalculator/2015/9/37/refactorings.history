@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;&apos; to &apos;changeCalculator.ChangeCalculator.main(...)&apos;&#x0A;- Original project: &apos;changeCalculator&apos;&#x0A;- Destination element: &apos;changeCalculator.ChangeCalculator.main(...)&apos;&#x0A;- Original element: &apos;changeCalculator.ChangeCalculator.main(...)&apos;" description="Copy method" destination="/src&lt;changeCalculator{ChangeCalculator.java[ChangeCalculator~main~\[QString;" element1="/src&lt;changeCalculator{ChangeCalculator.java[ChangeCalculator~main~\[QString;" flags="589830" id="org.eclipse.jdt.ui.copy" members="1" policy="org.eclipse.jdt.ui.copyMembers" stamp="1441581108338" version="1.0"/>
+</session>

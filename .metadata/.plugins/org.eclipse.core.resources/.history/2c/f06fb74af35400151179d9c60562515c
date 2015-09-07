@@ -13,8 +13,8 @@ public class ChangeCalculator
 
 		float priceReal = Float.parseFloat(price);
 		float paymentReal = Float.parseFloat(payment);
-		int priceRealInCents = (int)(priceReal *100);
-		int paymentRealInCents = (int)(paymentReal * 100);
+		int priceRealInCents = (int)priceReal *100;
+		int paymentRealInCents = (int)paymentReal * 100;
 		int calculation = (int) (paymentRealInCents - priceRealInCents);
 
 		dollars = calculation / 100;
